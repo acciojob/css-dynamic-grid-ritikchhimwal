@@ -1,1 +1,41 @@
 /*  your css code here. If applicable */
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.grid-container {
+  display: grid;
+  gap: 15px; /* space between grid items */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 20px;
+  width: 90%;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item {
+  background-color: lightgray;
+  height: 150px;
+  width: 100%; /* Ensures it fits within the grid cell */
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
