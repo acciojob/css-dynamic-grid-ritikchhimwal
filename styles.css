@@ -12,7 +12,7 @@ body {
 .grid-container {
   display: grid;
   gap: 10px; /* Fix grid-gap as expected */
-  grid-template-columns: repeat(auto-fill, 200px); /* Enforce fixed width for each grid item */
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); /* Enforce fixed width for each grid item */
   justify-content: center; /* Center grid in container */
   padding: 20px;
   width: auto;
