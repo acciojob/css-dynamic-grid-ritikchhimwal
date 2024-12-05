@@ -11,15 +11,16 @@ body {
 
 .grid-container {
   display: grid;
-  gap: 10px; /* Fix grid-gap as expected */
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); /* Enforce fixed width for each grid item */
-  justify-content: center; /* Center grid in container */
+  gap: 10px; /* space between grid items */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   padding: 20px;
-  width: auto;
+  width: 100%;
+  max-width: 1200px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .grid-item {
   background-color: lightgray;
